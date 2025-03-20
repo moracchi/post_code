@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>郵便番号で住所検索</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>郵便番号で住所検索</h1>
+  </header>
+
+  <main>
+    <div class="search-container">
+      <label for="zipcode">郵便番号：</label>
+      <input type="text" id="zipcode" placeholder="例: 1234567" maxlength="7">
+      <button id="search-btn">検索</button>
+    </div>
+
+    <div class="result-container">
+      <div class="truck-animation">
+        <!-- 郵便車 -->
+        <img src="images/post.svg" alt="郵便車" id="truck">
+      </div>
+      <p id="address" class="address-display">住所がここに表示されます</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 郵便サービス</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

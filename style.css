@@ -1,0 +1,90 @@
+/* グローバルスタイル */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 20px;
+  text-align: center;
+}
+
+/* ヘッダー */
+header {
+  background-color: #dc143c; /* 郵便を連想させる赤色 */
+  color: #fff;
+  padding: 15px 0;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+/* メインコンテンツ */
+main {
+  margin-top: 20px;
+}
+
+.search-container {
+  margin-bottom: 30px;
+}
+
+#zipcode {
+  padding: 8px 10px;
+  font-size: 16px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#search-btn {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #dc143c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#search-btn:hover {
+  background-color: #b01232;
+}
+
+/* 結果表示 */
+.result-container {
+  margin-top: 50px;
+  height: 120px; /* コンテナの高さを十分に確保 */
+}
+
+.truck-animation {
+  position: relative;
+  height: 120px; /* 郵便車画像に合わせる */
+  overflow: visible; /* 切れないようにする */
+}
+
+#truck {
+  width: 120px;
+  position: absolute;
+  right: -150px; /* 画面外からスタート */
+  top: 0;
+  display: block;
+}
+
+.address-display {
+  font-size: 20px;
+  margin-top: 20px;
+  opacity: 0; /* 初期状態で非表示 */
+  transition: opacity 0.5s ease-in;
+}
+
+/* フッター */
+footer {
+  margin-top: 50px;
+  color: #777;
+  font-size: 14px;
+}
